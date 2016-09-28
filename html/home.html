@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div id = 'main'>
+
+    <div id = 'right-box'>
+
+        <textarea type='text' 
+            id = 'right-input'
+            placeholder = 'Gift swap title'
+            maxlength='40'
+            autofocus></textarea>
+
+        <button id = 'sendbtn' disabled>Match and send</button>
+
+        <div id = 'hint'>(Three people or more)</div>
+
+    </div>
+
+
+
+    <div id = 'subtitle'>simple secret santa</div>
+
+
+    <button id = 'addbtn' >Add someone</button>
+
+
+    <div id = 'people'>
+
+        <div class = 'person'>
+
+            <div class = 'xbox'>
+                <span class = 'x'>x</span>
+            </div>
+
+            <input type = 'text' class = 'name' placeholder = 'Name'>
+            <input type = 'text' class = 'email' placeholder = 'Email'>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<div id = 'sent'>
+
+    Your gift swap is complete! <br>
+    Check your inbox for your match.<br><br>
+    <button id = 'moreswapbtn'>Swap more gifts</button>
+    
+</div>
+
+
+{% endblock %}

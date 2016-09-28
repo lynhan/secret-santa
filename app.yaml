@@ -1,0 +1,22 @@
+application: thesecretclaus
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /javascript
+  static_dir: javascript
+
+- url: /.*
+  script: thesecretclaus.application
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
+  
